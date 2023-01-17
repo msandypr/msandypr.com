@@ -15,6 +15,9 @@ const Social = () => {
         <a href="https://discordapp.com/users/884592049314222141/" className="home__social-icon" target="blank">
         <i class='bx bxl-discord-alt'></i>
         </a>
+        <a href="https://github.com/msandypr/msandypr.com" className="home__social-icon" target="blank">
+        <i class='bx bx-code-alt'></i>
+        </a>
     </div>
   )
 }
