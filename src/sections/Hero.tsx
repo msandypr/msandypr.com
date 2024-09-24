@@ -1,11 +1,18 @@
 import sandyHero from "@/assets/images/sandy-rounded-hero.png"
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg"
-import { memo } from "react";
+import grainImage from "@/assets/images/grain.jpg";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60">
+    <div className="py-32 md:py-48 lg:py-60 relative z-0">
+      <div className="absolute inset-0 -z-30 opacity-5" style={{
+        backgroundImage: `url(${grainImage.src})`,
+      }}></div>
+      <div className="size-[620px] hero-ring"></div>
+      <div className="size-[820px] hero-ring"></div>
+      <div className="size-[1020px] hero-ring"></div>
+      <div className="size-[1220px] hero-ring"></div>
       <div className="container">
         <div className="flex flex-col items-center">
           <Image src={sandyHero} className="size-[100px] border border-gray-800 rounded-full" alt="MSANDYPR"></Image>
