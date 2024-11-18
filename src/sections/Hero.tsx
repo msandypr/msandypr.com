@@ -44,7 +44,7 @@ export const HeroSection = () => {
         <HeroOrbit size={720} rotation={85}>
           <div className="size-3 rounded-full bg-emerald-300/20" />
         </HeroOrbit>
-        <HeroOrbit size={520} rotation={-42}>
+        <HeroOrbit size={520} rotation={-41}>
           <div className="size-2 rounded-full bg-emerald-300/20" />
         </HeroOrbit>
         <HeroOrbit size={650} rotation={-5}>
@@ -60,7 +60,7 @@ export const HeroSection = () => {
           ></Image>
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4">
             <div className="bg-green-500 size-2.5 rounded-full"></div>
-            <div className="text-sm font-medium">Available for Projects!</div>
+            <div className="text-sm font-medium">Available for Work/Projects!</div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
@@ -68,9 +68,8 @@ export const HeroSection = () => {
             Muhammad Sandy Putra Riyadi
           </h1>
           <p className="text-center mt-4 text-white/60 md:text-lg">
-            I am a Software Engineer with expertise in JavaScript and PHP,
-            proficient in various frameworks such as React.js, Node.js,
-            CodeIgniter, Laravel, TailwindCSS, and Bootstrap.
+            I am a Software Engineer with expertise in JavaScript, TypeScript, Java, Python and PHP,
+            proficient in various frameworks such as React.js, Next.js, Node.js, Express.js, Laravel and Many More!.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8">

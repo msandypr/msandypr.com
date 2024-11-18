@@ -15,9 +15,10 @@ export const HeroOrbit = ({
           width: `${size}px`,
         }}
       >
-        <div className="inline-flex" style={{ 
-            transform: `rotate(${rotation * -1}deg)`,
-         }}>{children}</div>
+        <div className="inline-flex" style={{
+          transform: `rotate(${rotation * -1}deg)`,
+        }}>{children}
+        </div>
         {/* <StarIcon className="size-28 text-emerald-300" /> */}
       </div>
     </div>
