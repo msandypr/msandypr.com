@@ -6,6 +6,18 @@ import grainImage from "@/assets/images/grain.jpg";
 
 const portofolioProjects = [
   {
+    company: "Indonesian Maritime Youths",
+    year: "2024",
+    title: "Company Profile and Membership Management System",
+    results: [
+      { title: "Streamlined Membership Registration and Management Processes" },
+      { title: "Improved User Engagement Through an Intuitive Interface" },
+      { title: "Enhanced System Performance and Security for Seamless Operations" },
+    ],
+    link: "https://maritimmuda.id/",
+    image: projectImageTemplate,
+  },
+  {
     company: "Cyber Web Indonesia",
     year: "2023",
     title: "AI SEO Optimization Tool",
