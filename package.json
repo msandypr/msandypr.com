@@ -1,17 +1,60 @@
 {
-  "name": "msandypr-website",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "msandypr.com",
+  "version": "1.0.1",
   "scripts": {
     "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro build",
+    "format": "prettier -w '**/*.{js,jsx,cjs,ts,tsx,astro}'",
     "preview": "astro preview",
-    "astro": "astro"
+    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "test": "astro test",
+    "test:watch": "astro test --watch"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/tailwind": "^5.1.2",
+    "@fontsource-variable/inter": "^5.0.8",
+    "@fontsource/inter": "^5.0.8",
+    "@resvg/resvg-js": "^2.4.1",
+    "@tailwindcss/typography": "^0.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "astro": "^4.16.3",
+    "astro-expressive-code": "^0.26.1",
+    "astro-icon": "^0.8.1",
+    "eslint": "^8.50.0",
+    "eslint-plugin-astro": "^0.29.0",
+    "prettier-plugin-astro": "^0.12.0",
+    "satori": "^0.10.8",
+    "satori-html": "^0.3.2",
+    "sharp": "^0.32.6",
+    "tsm": "^2.3.0"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.0.3",
+    "@astrojs/mdx": "^3.1.8",
+    "@astrojs/netlify": "^3.1.1",
+    "@astrojs/preact": "^3.0.1",
     "@astrojs/rss": "^4.0.10",
-    "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.1.1"
-  }
+    "@octokit/core": "^4.2.4",
+    "astro-compressor": "^0.4.1",
+    "svgo": "2.8.0",
+    "tailwindcss": "^3.3.3",
+    "typescript-esbuild": "^0.2.22",
+    "vite-plugin-compress": "^2.1.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msandypr/msandypr.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/msandypr/msandypr.com/issues"
+  },
+  "homepage": "https://msandypr.com",
+  "private": false
 }
