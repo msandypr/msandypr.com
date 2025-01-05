@@ -1,68 +1,56 @@
-# Astro Starter Kit: Blog
+# 🌟 msandypr.com
 
-```sh
-npm create astro@latest -- --template blog
-```
+👋 Hi, I'm Sandy, 21y'o Programmer from Indonesia 🚀 Crafting web wonders with JavaScript/TypeScript, PHP, I mastered many frameworks.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## 🛠️ Technologies Used
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro.js** - Static site generator.
+- **Tailwind CSS** - Utility-first CSS framework.
+- **TypeScript** - Typed JavaScript at Any Scale.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## 📚 Documentation
 
-Features:
+### Prerequisites
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- Node.js and npm installed, im using bun.
+- Git installed.
+- Any IDE, im using VSCode
 
-## 🚀 Project Structure
+### Setup
 
-Inside of your Astro project, you'll see the following folders and files:
+1. **Clone the repository:**
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+   ```sh
+   git clone https://github.com/msandypr/msandypr.com.git
+   ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+2. **Install dependencies:**
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+   ```sh
+   cd msandypr.com
+   npm install
+   ```
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+3. **Run the development server:**
 
-Any static assets, like images, can be placed in the `public/` directory.
+   ```sh
+   npm run dev
+   ```
 
-## 🧞 Commands
+### Usage
 
-All commands are run from the root of the project, from a terminal:
+- **Build for production:**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+  ```sh
+  npm run build
+  ```
 
-## 👀 Want to learn more?
+- **Deploy:**
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+  ```sh
+  npm run deploy
+  ```
 
-## Credit
+## 📄 License
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This project is licensed under the MIT License & [David Cojocaru](https://github.com/cojocaru-david) - see the [LICENSE](LICENSE) file for details.
