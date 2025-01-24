@@ -1,4 +1,0 @@
-Sitemap: https://msandypr.com/sitemap-index.xml
-
-User-agent: *
-Allow: /
