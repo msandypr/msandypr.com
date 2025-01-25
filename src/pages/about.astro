@@ -1,0 +1,71 @@
+---
+import AuthorCard from '@/components/AuthorCard.astro'
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import Container from '@/components/Container.astro'
+import Link from '@/components/Link.astro'
+import ProjectCard from '@/components/ProjectCard.astro'
+import { SITE } from '@/consts'
+import Layout from '@/layouts/Layout.astro'
+import { getCollection } from 'astro:content'
+
+const authors = await getCollection('authors')
+const projects = await getCollection('projects')
+---
+
+<Layout title="About" description={SITE.DESCRIPTION}>
+  <Container class="flex flex-col gap-y-6">
+    <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
+
+    <section>
+      {
+        authors.length > 0 ? (
+          <ul class="not-prose flex flex-col gap-4">
+            {authors.map((author) => (
+              <li>
+                <AuthorCard author={author} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-center text-muted-foreground">No authors found.</p>
+        )
+      }
+      <div class="mt-4 min-w-full">
+        <div class="prose prose-neutral mb-8 dark:prose-invert">
+          <h2 class="mb-4 text-2xl font-semibold">Summary</h2>
+          <p class="text-justify mb-4">
+            Driven Software Engineer with a passion for creating impactful solutions through innovative development
+            practices. Experienced in collaborating on diverse projects, adapting to dynamic environments, and
+            contributing to both individual and team success. Committed to continuous learning and growth, with a
+            strong foundation in software development and a keen interest in exploring emerging technologies to
+            deliver optimal results.
+          </p>
+          <h2 class="mb-4 text-2xl font-semibold">Skills</h2>
+          <h4>Technical Skills:</h4>
+          <p class="text-justify mb-4">
+            • Programming Languanges: HTML, CSS, PHP, Java, JavaScript, TypeScript, Python, SQL. <br>
+            • Frameworks: Bootstrap, Tailwind CSS, Wordpress, CodeIgniter, Laravel, React.js, Vue.js, Node.js, <br>
+            Express.js, Next.js, Nest.js, Sequelize, TypeORM, EloquentORM, Prisma. <br>
+            • Database Management System: MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, SQLite,
+            Oracle Databse, Google Firebase. <br>
+            • Misc: Git, Google Cloud Platform, Netlify, Cloudflare, Jira, Whimsical <br>
+          </p>
+          <h4>Soft Skills:</h4>
+          <p class="text-justify mb-4">
+            • Leadership, Teamwork and Collaboration, Problem-Solving, Communication, Adaptability, Critical Thinking, Technical Writing and Documentation. <br>
+            • Languanges: <br>
+            &nbsp; 1. Bahasa Indonesia: Native Speaker. <br>
+            &nbsp; 2. English: Intermediate. <br>
+          </p>
+
+          
+        </div>
+
+        <!-- <h2 class="mb-4 text-2xl font-semibold">Example Projects Listing</h2>
+        <div class="flex flex-col gap-4">
+          {projects.map((project) => <ProjectCard project={project} />)}
+        </div> -->
+      </div>
+    </section>
+  </Container>
+</Layout>
